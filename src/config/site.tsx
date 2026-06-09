@@ -1,7 +1,6 @@
 import Home from "../pages/Home";
 import Resume from "../pages/Resume";
 import Projects from "../pages/Projects";
-import Contact from "../pages/Contact";
 import Files from "../pages/Files";
 
 export interface SiteRoute {
@@ -25,11 +24,6 @@ export const NAV_LINKS: SiteRoute[] = [
     label: "Projects",
     path: "/projects",
     element: <Projects />,
-  },
-  {
-    label: "Contact",
-    path: "/contact",
-    element: <Contact />,
   },
   {
     label: "Files",
