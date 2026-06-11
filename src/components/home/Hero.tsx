@@ -2,6 +2,7 @@ import Button from "react-bootstrap/Button";
 import Stack from "react-bootstrap/Stack";
 
 import { heroData } from "../../data/home";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -24,16 +25,19 @@ export default function Hero() {
         gap={3}
         className="justify-content-center mt-4"
       >
-        <Button href="/resume">
+        <Link to="/resume">
+          <Button>
           View Resume
-        </Button>
+          </Button>
+        </Link>
 
+        <Link to="/projects">
         <Button
           variant="outline-primary"
-          href="/projects"
         >
           View Projects
         </Button>
+        </Link>
       </Stack>
 
     </div>
