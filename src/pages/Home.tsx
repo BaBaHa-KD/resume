@@ -1,26 +1,36 @@
-import { Container } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
 
+import Hero from "../components/home/Hero";
+import About from "../components/home/About";
+import FeaturedProjects
+  from "../components/home/FeaturedProjects";
+import SkillsSnapshot
+  from "../components/home/SkillsSnapshot";
+import ContactCTA
+  from "../components/home/ContactCTA";
 
 export default function Home() {
-    return (
-        <>
-        <Container className="mt-3"> 
-            <h2>Software Developer</h2>
+  return (
+    <Container className="py-5">
 
-            <p>Backend-focused developer with experience in
-            Java, databases, networking and enterprise software.</p>
+      <Hero />
 
-            
+      <div className="my-5">
+        <About />
+      </div>
 
-            <h5 className="mt-5">Highlights</h5>
-            <hr/>
-            <ul>
-                <li>Completed Ausbildung as Fachinformatiker*in Anwendungsentwicklung</li>
-                <li>Cisco DevNet Associate</li>
-                <li>Passion for backend systems and software architecture</li>
-            </ul>
-        </Container>
+      <div className="my-5">
+        <FeaturedProjects />
+      </div>
 
-        </>
-    );
+      <div className="my-5">
+        <SkillsSnapshot />
+      </div>
+
+      <div className="my-5">
+        <ContactCTA />
+      </div>
+
+    </Container>
+  );
 }
